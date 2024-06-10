@@ -2,7 +2,7 @@
 
 This MIPS assembly program performs various image processing tasks, including image thresholding, matrix transformation, and cryptographic manipulation of image data. The program uses predefined matrices for transformations and processes images stored in the form of byte arrays.
 
-Program Structure
+# Program Structure
 
 The program is divided into three main parts:
 
@@ -11,7 +11,7 @@ The program is divided into three main parts:
 3. Image Cryptography
 
 Image Processing Functions
-1. Image Thresholding
+# 1. Image Thresholding
 
 The threshold function processes an image by applying a threshold value. Pixels above the threshold are set to 255, and those below are set to 0.
 
@@ -21,7 +21,7 @@ $a1: Output buffer address.
 $a2: Image dimension (assuming a square image).
 $a3: Threshold value.
 
-2. Matrix Transformations
+# 2. Matrix Transformations
 
 The transform function applies a transformation matrix to the image.
 
@@ -31,7 +31,7 @@ $a1: Output buffer address.
 $a2: Transformation matrix address.
 $a3: Image dimension (assuming a square image).
 
-3. Image Cryptography
+# 3. Image Cryptography
 
 The cryptography function performs a cryptographic manipulation on the image data based on a simple modular arithmetic scheme.
 
@@ -40,15 +40,15 @@ $a0: Input buffer address.
 $a1: Output buffer address.
 $a2: Image dimension (assuming a square image).
 
-Messages and Output
+# Messages and Output
 
 The program uses syscall instructions to print messages and array contents to the console, providing a clear output for each processing step.
 
-File Handling
+# File Handling
 
 The program reads from and writes to image files, specified in the .data section. These files are in PGM (Portable GrayMap) format.
 
-How to Run
+# How To Run
 
 Assemble the program using an assembler like SPIM or MARS.
 Load the assembled program into the MIPS simulator.
